@@ -64,42 +64,14 @@ ul {
  ul a {
     text-decoration: none;
     color: #fff;
-    padding: 35px;
+    padding: 41px;
 }
 
 ul a:hover {
     color: #222;
     background-color: #55d6aa;
-    transition: all 0.5s ease-in-out     0s;
+    transition: all 0.5s ease-in-out;
 }
-
-
-
-/* media less than 900px */
-
-@media screen and (min-width: 900px) {
-    nav {
-        flex: 1;
-    }
-    
-    nav .nav-menu {
-        max-height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    
-    
-
-}
-
-
 
 /*button*/
 
@@ -113,17 +85,23 @@ button {
     display: inline-block;
     padding: 20px 20px;
     margin:  4px 2px;
-    font-size: 16px;
-    transition: all ease-out 0.3s;
+    
 
 }
 
 button a {
-    color: #444;
+    padding: 20px 20px;
+    color: #222;
+    
 }
+
 
 button:hover {
     background-color: #55d6aa;
+    transition: all ease-in-out 0.3s;
+}
+
+button a:hover {
     color: #fff;
 }
 
@@ -139,7 +117,7 @@ footer {
     background-color: #444;
 }
 
-footer h1 {
+footer h2 {
     color: #ffffff;
 }
 
