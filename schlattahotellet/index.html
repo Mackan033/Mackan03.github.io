@@ -15,16 +15,15 @@
             <header>
                
                 <nav>
-                    
-                    <div class="logo">    
+                    <div class="bild">    
                         <h1>Schlättahotellet</h1>
-                            <img src="./img/Fasader-1024x723  (1).png" alt="apple logo">
+                            <img src="./img/fasader.png">
                     </div>
                     <ul>
                         <li><a href="#">Mat & dryck</a></li>
-                        <li><a href="#">item</a></li>
+                        <li><a href="#">hotellet</a></li>
                         <li><a href="#">Erbjudanden</a></li>
-                        <button type="button" name="boka"><a href="#">Boka</a></button> 
+                        <button type="button" name="boka"><a href="#" target="_blank">Boka</a></button> 
                     </ul>
                     
                 </nav>
@@ -35,8 +34,47 @@
 
 
             <main>
-                <h1>Om oss</h1>
-                <p>Vårat hotell blev precis färdigbyggt bla bla bla</p>
+               <!--bildspel-->
+                <div class="slider">
+                    <div class="slides">
+
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                   <!--bilder-->
+                    <div class="slide first">
+                        <img src="./img/hotel-1749602_1920.jpg" alt="hotellrum">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/travel-1677347_1920.jpg" alt="säng">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/bed-4416515_1920.jpg" alt="soffa">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/wine-1838132_1920.jpg" alt="vin">
+                    </div>
+                    
+                    <!--automatisk navigering-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                    </div>
+                    <!--manuell navigering-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+
+                </div>    
             </main>
        
             
@@ -53,7 +91,7 @@
                 </div>
                 
                 <div>
-                    <h2>Bo</h2>
+                    <h2>Hem</h2>
                     <a href="#">webbshop</a>
                     <a href="#">arbeta</a>
                     <a href="#">press</a>
@@ -62,12 +100,29 @@
                 </div>
     
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8394.834945361852!2d12.9723957!3d58.2633271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x646a7effa8a5c87c!2sPentahallen!5e0!3m2!1ssv!2sse!4v1606377294757!5m2!1ssv!2sse" width="300" height="190"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>   
+                    <button type="button" name="hitta-hit"><a href="https://goo.gl/maps/dj79aae1sdjxS2Uc7" target="_blank">Hitta hit</a></button>
                 </div>
-    
+                <p> &copy; 2020 - <span id="year"></span>. All rights reserved.</p>
             </footer>
         </div>
+      <script type ="text/javascript">
+
+        var year =  new Date().getFullYear().toString();
+
+        document.getElementById("year").innerHTML = year;
       
+      </script> 
+
+      <script type ="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+      </script>
         
     </body>
 </html>

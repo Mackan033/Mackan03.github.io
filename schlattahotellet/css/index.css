@@ -7,6 +7,7 @@
 body {
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: medium;
+    text-transform: uppercase;
 }
 
 .wrapper {
@@ -22,34 +23,33 @@ body {
 
 
 header {
-    height: 100px;
+    height: 100%;
     grid-area: header;
     background-color: #444;
-}
-
-
-​.logo{
-    display: flex;
-    flex: 1 0 auto;
-    height: 100%;
     
 }
 
 
-.logo h1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #fff;
+​.bild {
+    position: relative;
+    
+}
+
+
+.bild h1{
+    position: relative;
+    font-size: large;
+    color: #eee;
 
 }
 
 nav {
     display: flex;
+    align-items: center;
     height: 100%;
 }
 
-ul {
+nav ul {
     display: flex;
     flex: 1 0 auto;
     padding: 40px;
@@ -92,6 +92,7 @@ button {
 button a {
     padding: 20px 20px;
     color: #222;
+    text-decoration: none;
     
 }
 
@@ -115,6 +116,7 @@ footer {
     align-items: center;
     grid-area: footer;
     background-color: #444;
+    
 }
 
 footer h2 {
@@ -135,13 +137,132 @@ footer > div {
     margin: 0 auto;
 }
 
-iframe {
-    border: none;
+footer > p {
+    text-align: center;
+    grid-column: 2 / 3;
 }
 
 /*main*/
 
 main {
     grid-area: main;
+    background: #dbc2ff;
+}
+
+/*slideshow/bildspel*/
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+
+}
+
+/* manuell navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #55d6aa;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background: #55d6aa;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+/*automatisk navigering*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+
+}
+
+.navigation-auto div {
+    border: 2px solid #55d6aa;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+#radio1:checked ~ .navigation-auto .auto.btn1 {
+    background: #55d6aa;
+
+}
+
+#radio2:checked ~ .navigation-auto .auto.btn2 {
+    background: #55d6aa;
     
 }
+
+#radio3:checked ~ .navigation-auto .auto.btn3 {
+    background: #55d6aa;
+    
+}
+
+#radio4:checked ~ .navigation-auto .auto.btn4 {
+    background: #55d6aa;
+    
+}
+
