@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: medium;
     text-transform: uppercase;
 }
@@ -40,6 +40,8 @@ header {
     position: relative;
     font-size: large;
     color: #eee;
+    
+
 
 }
 
@@ -93,7 +95,7 @@ button a {
     padding: 20px 20px;
     color: #222;
     text-decoration: none;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -103,7 +105,7 @@ button:hover {
 }
 
 button a:hover {
-    color: #fff;
+    color: #000;
 }
 
 
@@ -146,12 +148,13 @@ footer > p {
 
 main {
     grid-area: main;
-    background: #c67e10;
+    background: #666;
 }
 
 /*slideshow/bildspel*/
 
 .slider {
+    margin: 0 auto;
     width: 800px;
     height: 500px;
     border-radius: 10px;
@@ -170,14 +173,17 @@ main {
 }
 
 .slide {
+    display: flex;
     width: 20%;
     transition: 2s;
 }
 
 .slide img {
+    
     width: 800px;
-    height: 500px;
-
+    overflow: hidden;
+    object-position: 50% 50%;
+   
 }
 
 /* manuell navigation */
