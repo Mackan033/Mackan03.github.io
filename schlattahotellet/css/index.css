@@ -149,6 +149,10 @@ footer > p {
 main {
     grid-area: main;
     background: #666;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*slideshow/bildspel*/
@@ -273,3 +277,124 @@ main {
     
 }
 
+/* card css */
+
+.card {
+    border: 1px hidden red;
+    flex: 1 1 42%;
+    margin: 30px;
+    position: relative;
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+    background-color: #eeeeee;
+}
+
+.card a {
+    text-decoration: none;
+    color: #e76c67;
+}
+
+.card h2 {
+    font-size: medium;
+    font-weight: 900;
+    color: #e76c67;
+    margin-bottom: 10px;
+    
+}
+
+.card h1 {
+    font-size: x-large;
+}
+
+
+
+.card-img {
+    background: url(../Img/chicago.jpeg);
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.img1 {
+    background: url(../Img/new\ york.jpg);
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.img2 {
+    background: url(../Img/seattle.jpeg);
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.img3 {
+    background: url(../Img/miami.jpg);
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card-content {
+    padding: 20px 20px 100px;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid ;
+    
+}
+
+.card-likes {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card-likes a {
+    color: #e76c67;
+}
+
+.card-likes a:hover {
+    color: #55d6aa;
+    transition: all 0.3s ease-out;
+}
+
+/* card button */
+
+.card-button {
+    border: 1px solid red;
+    background: #eeeeee;
+    padding: 10px;
+    color: #eeeeee;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;   
+}
+
+.card-button:hover {
+    background: #e76c67;
+    color: #eeeeee;
+}
+
+
+nav > ul > li  {
+    color: #ffffff;
+}
+
+.card-likes > a {
+    color: #e76c67;
+}
