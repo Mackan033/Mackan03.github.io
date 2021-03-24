@@ -155,7 +155,7 @@ main {
 
 .slider {
     margin: 0 auto;
-    width: 800px;
+    width: 100vw;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
@@ -179,11 +179,10 @@ main {
 }
 
 .slide img {
-    
-    
-    overflow: hidden;
-    object-position: 50% 50%;
-   
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center center;
 }
 
 /* manuell navigation */
@@ -197,6 +196,7 @@ main {
 }
 
 .manual-btn {
+    display: flex;
     border: 2px solid #55d6aa;
     padding: 5px;
     border-radius: 10px;
@@ -206,7 +206,7 @@ main {
 }
 
 .manual-btn:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .manual-btn:hover {
@@ -229,6 +229,7 @@ main {
     margin-left: -60%;
 }
 
+ 
 /*automatisk navigering*/
 
 .navigation-auto {
@@ -248,7 +249,7 @@ main {
 }
 
 .navigation-auto div:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 40px;
 
 }
 
