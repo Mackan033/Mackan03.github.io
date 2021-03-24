@@ -308,7 +308,7 @@ main {
 
 
 .card-img {
-    background: url(../Img/chicago.jpeg);
+    
     height: 150px;
     background-size: cover;
     background-position: center center;
@@ -317,7 +317,7 @@ main {
 }
 
 .img1 {
-    background: url(../Img/new\ york.jpg);
+   
     height: 150px;
     background-size: cover;
     background-position: center center;
@@ -325,7 +325,7 @@ main {
 }
 
 .img2 {
-    background: url(../Img/seattle.jpeg);
+    
     height: 150px;
     background-size: cover;
     background-position: center center;
@@ -334,7 +334,7 @@ main {
 }
 
 .img3 {
-    background: url(../Img/miami.jpg);
+    
     height: 150px;
     background-size: cover;
     background-position: center center;
