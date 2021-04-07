@@ -148,7 +148,7 @@ footer > p {
 
 main {
     grid-area: main;
-    background: rgb(43, 73, 107);
+    background: rgba(102, 102, 102, 0.603);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -205,7 +205,7 @@ main {
 
 .manual-btn {
     display: flex;
-    border: 2px solid #55d6aa;
+    border: 2px solid #e76c67;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -250,7 +250,7 @@ main {
 }
 
 .navigation-auto div {
-    border: 2px solid #55d6aa;
+    border: 2px solid #e76c67;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -290,6 +290,7 @@ main {
     position: relative;
     box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
     background-color: #eeeeee;
+    border-radius: 5px;;
 }
 
 .card a {
@@ -402,3 +403,5 @@ nav > ul > li  {
 .card-likes > a {
     color: #e76c67;
 }
+
+/* media quarys */
