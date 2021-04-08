@@ -7,14 +7,68 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/bokning.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <form>
-            
+        <div class="wrapper">
+            <header> 
+                <nav>
+                    <div class="bild">    
+                        <h1>Schlättahotellet</h1>
+                            <a href="./index.html"><img src="../img/fasader.png" alt="logga"></a>
+                    </div>
+                    <ul>
+                        <li><a href="#">Mat & dryck</a></li>
+                        <li><a href="#">hotellet</a></li>
+                        <li><a href="#">Erbjudanden</a></li>
+                         
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                
+                
+            </main>
+           
+           
+           
+            <footer>
+                <div>
+                    <h2>Hem</h2>
+                    <a href="#">uppleva</a>
+                    <a href="#">bli en av oss</a>
+                    <a href="#">handla</a>
+                    <a href="#">fira</a>
+                    <a href="#">kontakt</a>
+                </div>
+                
+                <div>
+                    <h2>Hem</h2>
+                    <a href="#">webbshop</a>
+                    <a href="#">arbeta</a>
+                    <a href="#">press</a>
+                    <a href="#">historia</a>
+                    <a href="#">mötas</a>
+                </div>
+    
+                <div>
+                    <button type="button" name="hitta-hit"><a href="https://goo.gl/maps/dj79aae1sdjxS2Uc7" target="_blank">Hitta hit</a></button>
+                </div>
+                <p> &copy; 2020 - <span id="year"></span>. All rights reserved. </p>
+            </footer>
+        </div>
 
 
-        </form>
+
         
-        <script src="" async defer></script>
+        <script type ="text/javascript">
+
+            var year =  new Date().getFullYear().toString();
+    
+            document.getElementById("year").innerHTML = year;
+          
+          </script> 
     </body>
 </html>

@@ -4,3 +4,159 @@
     box-sizing: border-box;
 }
 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 100px 1fr 200px;
+    grid-template-columns: 20% 1fr 20%;
+    height: 100vh;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+header {
+    height: 100%;
+    grid-area: header;
+    background-color: #444;
+    
+}
+
+
+​.bild {
+    position: relative;
+    
+}
+
+
+.bild h1{
+    position: relative;
+    font-size: large;
+    color: #eee;
+    
+
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 40px;
+    height: 100%;
+    list-style-type: none;  
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+ ul a {
+    text-decoration: none;
+    color: #fff;
+    padding: 41px;
+}
+
+ul a:hover {
+    color: #222;
+    background-color: #55d6aa;
+    transition: all 0.5s ease-in-out;
+}
+
+/*button*/
+
+button {
+    
+    border: none;
+    color: #444;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    margin:  4px 2px;
+    
+
+}
+
+button a {
+    padding: 20px 20px;
+    color: #222;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+button:hover {
+    background-color: #55d6aa;
+    transition: all ease-in-out 0.3s;
+}
+
+button a:hover {
+    color: #000;
+}
+
+
+/*footer*/
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: #444;
+    
+}
+
+footer h2 {
+    color: #ffffff;
+}
+
+footer > div > a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color .3s ease-out;
+}
+footer > div > a:hover {
+    color: #55d6aa;
+}
+
+footer > div {
+    margin: 0 auto;
+}
+
+footer > p {
+    text-align: center;
+    grid-column: 2 / 3;
+}
+
+
+/* formulär*/
+
+main {
+    grid-area: main;
+    background: #666;
+}
+
+form {
+    display: flex;
+    flex: 1 0 auto;
+
+}
+
+
+ 
