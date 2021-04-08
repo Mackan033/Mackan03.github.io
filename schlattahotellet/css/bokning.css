@@ -152,11 +152,36 @@ main {
     background: #666;
 }
 
-form {
-    display: flex;
-    flex: 1 0 auto;
+/* card css */
 
+.card {
+    border: 1px hidden red;
+    flex: 1 1 42%;
+    margin: 30px;
+    position: relative;
+    box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+    background-color: #eeeeee;
+    border-radius: 5px;;
 }
+
+
+.card h2 {
+    font-size: medium;
+    font-weight: 900;
+    color: #e76c67;
+    margin-bottom: 10px;
+    
+}
+
+.card h1 {
+    font-size: x-large;
+}
+
+.card-content {
+    padding: 20px 20px 100px;
+}
+
+
 
 
  
