@@ -192,7 +192,7 @@ main {
 
 .slide img {
     width: 100vw;
-    height: 70vh;
+    height: 100%;
     object-fit: cover;
     object-position: center center;
 }
@@ -342,6 +342,14 @@ main {
 
 }
 
+.card-img4 {
+    background: url(../img/champagne.jpg);
+}
+
+.card-img5 {
+    background: url(../img/shopping.jpg);
+}
+
 .card-img {
     height: 150px;
     background-size: cover;
@@ -408,8 +416,69 @@ nav > ul > li  {
     color: #e76c67;
 }
 
+/*hamburger-meny*/
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #ffffff;
+
+}
+
+.menu-btn_burger {
+    width: 50px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+}   
+
+.menu-btn_burger::before, 
+.menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before {
+    transform: translateY(-16px);
+}
+
+.menu-btn_burger::after {
+    transform: translateY(16px);
+}
+
+/* animation */
+
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+
+}
+ .menu-btn.open .menu-btn_burger::before {
+     transform: rotate(45deg) translate(35px, -35px);
+ }
+
+ .menu-btn.open .menu-btn_burger::after {
+     transform: rotate(-45deg) translate(35px, 35px);
+ }
+
 /* media queries*/
-@media screen {
+@media screen and (max-width: 952px) {
     
+
 }
 
