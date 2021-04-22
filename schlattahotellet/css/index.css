@@ -222,7 +222,7 @@ main {
 }
 
 .manual-btn:hover {
-    background: #55d6aa;
+    background: #e76c67;
 }
 
 #radio1:checked ~ .first {
@@ -266,22 +266,22 @@ main {
 }
 
 #radio1:checked ~ .navigation-auto .auto.btn1 {
-    background: #55d6aa;
+    background: #e76c67;
 
 }
 
 #radio2:checked ~ .navigation-auto .auto.btn2 {
-    background: #55d6aa;
+    background: #e76c67;
     
 }
 
 #radio3:checked ~ .navigation-auto .auto.btn3 {
-    background: #55d6aa;
+    background: #e76c67;
     
 }
 
 #radio4:checked ~ .navigation-auto .auto.btn4 {
-    background: #55d6aa;
+    background: #e76c67;
     
 }
 
@@ -460,6 +460,7 @@ nav > ul > li  {
     transform: translateY(16px);
 }
 
+
 /* animation */
 
 .menu-btn.open .menu-btn_burger {
@@ -479,6 +480,16 @@ nav > ul > li  {
 /* media queries*/
 @media screen and (max-width: 952px) {
     
-
+    li , button  {
+        display: none;
+    } 
+    
+    
 }
 
+@media screen and (min-width: 952px) {
+
+    .menu-btn , .menu-btn_burger {
+        visibility: hidden;
+    }
+}
